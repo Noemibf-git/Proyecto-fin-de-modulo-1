@@ -2,7 +2,12 @@
     margin: 0;
     padding: 0;
 }
-
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+}
+/* para que el footer quede abajo */
 .header {
     display: flex;
     align-items: center;
@@ -147,4 +152,40 @@ margin-top: .3125rem;
     display: flex;
     align-items: center;
     gap: 0.5rem;
+}
+
+
+/* FOOTER */
+.footer {
+    text-align: center;
+    background-color: #ececec;
+    padding: 1.3rem;
+
+}
+
+.footer__list {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding-bottom: 1.25rem;
+
+}
+
+.footer__container {
+    padding-bottom: .625rem;
+}
+
+.social__icon {
+    display: flex;
+    justify-content: center;
+    gap: .9375rem
+}
+.btn__legal, .nav__link{
+    text-decoration: none;
+    color: inherit;
+}
+.btn__legal, .nav__link:hover{
+    text-decoration: none;
+    color: #569058
 }
