@@ -204,8 +204,7 @@ body {
     color: inherit;
 }
 
-.btn__legal,
-.nav__link:hover {
+.btn__legal {
     text-decoration: none;
     color: #569058
 }

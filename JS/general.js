@@ -1,4 +1,15 @@
-// MODAL PARA LOGIN
+const nav = document.getElementById("headerNav")
+const open = document.getElementById("button__menu")
+const close = document.getElementById("buttonNavClose")
+
+open.addEventListener("click", () =>{
+  nav.classList.add("nav__visible");
+})
+
+close.addEventListener("click", () => {
+    nav.classList.remove("nav__visible");
+});
+
 const loginLink = document.getElementById("loginLink")
 const modal = document.getElementById("modalOverlay")
 const modalBtn = document.getElementById("closeBtn")
@@ -17,6 +28,4 @@ window.addEventListener('click', (e) =>{
     modal.style.display = "none"
   }
 } )
-
-// FIN MODAL LOGIN
 
