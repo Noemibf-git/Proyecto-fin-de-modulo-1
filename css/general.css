@@ -3,13 +3,14 @@
     padding: 0;
 }
 
+/* para que el footer quede abajo */
 body {
     display: grid;
     grid-template-rows: auto 1fr auto;
     min-height: 100vh;
 }
 
-/* para que el footer quede abajo */
+/* Cabecera */
 .header {
     display: flex;
     align-items: center;
@@ -24,6 +25,7 @@ body {
     font-style: normal;
 }
 
+/* Zona derecha del logo y marca */
 .logo__header {
     max-width: 4rem;
 }
@@ -32,18 +34,22 @@ body {
     padding-top: .3125rem;
 }
 
-/* Cambio de orden en mobilefirst */
+.header__container__logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+/* menú, cambio de orden en mobilefirst */
+.header__container__structure {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 1.5rem
+}
 .header__menu {
     display: flex;
     flex-direction: row-reverse;
 }
-
-
-.logIn {
-    margin: 15px;
-    padding: 10px;
-}
-
 
 .header__nav {
     opacity: 0;
@@ -51,7 +57,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: end;
-    gap: 25px;
+    gap: 1.5625rem;
     display: flex;
     gap: 1rem;
     position: fixed;
@@ -101,7 +107,7 @@ body {
     list-style-type: none;
     flex-direction: column;
     align-items: flex-start;
-    gap: 25px;
+    gap: 1.5625rem;
     display: flex;
 }
 
@@ -114,10 +120,16 @@ body {
     display: block;
 }
 
-.header__container__structure {
-    display: flex;
-    flex-direction: row-reverse;
-    gap: 1.5rem
+
+.list__item:hover {
+    color: #569058;
+
+}
+
+/* login y modal */
+.logIn {
+    margin: .9375rem;
+    padding: .625rem;
 }
 
 .link__modal {
@@ -152,22 +164,15 @@ body {
 .modal__content {
     background-color: rgb(212, 204, 204);
     padding: 1.25rem;
-    border-radius: 15px;
+    border-radius: .9375rem;
     width: 90%;
     position: relative;
 
 }
 
-.header__container__logo {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-}
 
-.list__item:hover {
-    color: #569058;
 
-}
+
 
 
 
@@ -183,7 +188,7 @@ body {
     list-style-type: none;
     display: flex;
     justify-content: center;
-    gap: 15px;
+    gap: .9375rem;
     padding-bottom: 1.25rem;
 
 }
@@ -287,7 +292,7 @@ body {
         position: absolute;
         left: 0;
         right: 0;
-        height: 10px;
+        height: .625rem;
         top: 100%;
     }
 
