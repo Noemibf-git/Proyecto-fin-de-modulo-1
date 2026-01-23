@@ -1,7 +1,14 @@
 .title {
     text-align: center;
     padding-top: 1.25rem;
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
 }
+
+
+
 .container__recipes {
     display: grid;
     grid-template-columns: 18.75rem;
@@ -10,6 +17,7 @@
     padding: 1.25rem 0;
 
 }
+
 .pagination {
     display: flex;
     justify-content: center;
@@ -17,6 +25,7 @@
     margin-top: 1.25rem;
     padding: 1.25rem;
 }
+
 .modal {
     display: none;
     position: fixed;
@@ -30,6 +39,7 @@
     align-items: center;
 
 }
+
 .modal__content {
     background-color: #fff;
     padding: 20px;
@@ -40,11 +50,13 @@
     overflow-y: auto;
     text-align: center;
 }
+
 .close {
     float: right;
     font-size: 28px;
     cursor: pointer;
 }
+
 .modal__img {
     width: 70%;
     border-radius: 8px;
@@ -111,9 +123,11 @@
     background-color: #fdf2e9;
 }
 
-
-
-
-
-
-
+@media (min-width: 48rem) {
+    .container__recipes {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1rem;
+        padding: 1rem;
+    }
+}

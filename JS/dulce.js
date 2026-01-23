@@ -1,6 +1,6 @@
 let allRecipes = [];
-const itemsPage = 5;
-const MaxLimit = 30;
+const itemsPage = 8;
+const MaxLimit = 50;
 let currentPage = 1;
 
 async function loadSweets() {
