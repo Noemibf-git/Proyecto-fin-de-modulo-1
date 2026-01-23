@@ -113,3 +113,12 @@
   font-size: 28px;
   cursor: pointer;
 }
+
+@media (min-width: 48rem) {
+    .container__recipes {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1rem;
+        padding: 1rem;
+    }
+}
