@@ -1,0 +1,37 @@
+
+.main{
+    width: 100%;
+}
+.contact__header, .contact__content, .contact__map{
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 1.25rem 1rem; 
+  text-align: center; 
+}
+
+
+.contact__title {
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    padding-bottom: 1.25rem;
+}
+.contact__info-title{
+    font-size: 1.25rem;
+    padding-top: .625rem;
+}
+
+.icon__contact{
+    padding-top: .625rem;
+}
+
+
+
+.contact__map-title{
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    padding-bottom: .625rem;
+}
