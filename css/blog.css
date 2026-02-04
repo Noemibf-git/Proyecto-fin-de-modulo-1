@@ -46,7 +46,6 @@
 
 .post__button {
   display: inline-block;
-
   text-decoration: none;
   padding: 5px 10px;
   background-color: #90b48b;
@@ -54,4 +53,17 @@
   border-radius: 5px;
   cursor: pointer;
   text-align: center;
+}
+
+@media (min-width: 48rem) {
+ .blog__post{
+  display: flex;
+  flex-direction: column;
+ }
+ .post__button{
+  align-self: center;
+
+ }
+  
+  
 }

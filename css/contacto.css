@@ -35,3 +35,22 @@
     font-style: normal;
     padding-bottom: .625rem;
 }
+
+.contact__form-group{
+    padding: .1875rem;
+    display: flex;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.contact__label{
+    width: 100px;
+}
+.contact__input,
+.contact__textarea {
+  flex: 1;              
+}
+
+.contact__description{
+    padding-bottom: .625rem;
+}
